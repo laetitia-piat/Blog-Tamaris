@@ -1,8 +1,23 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1 {
+    color: green;
+}
+header img {
+    max-width: 100px;
+}
+
 .conteneur-photo {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-img {
-    width: 200px;
+.conteneur-photo img {
+    max-width: 250px;
+    height: 200px;
+    margin: 10px;
 }
