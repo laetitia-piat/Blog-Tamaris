@@ -8,8 +8,28 @@ const posts = [
     image: "photo/Tom1.jpg",
   },
   {
+    titre: "Jennifer",
+    image: "photo/Jen1.jpg",
+  },
+  {
+    titre: "Brad",
+    image: "photo/Brad2.jpg",
+  },
+  {
+    titre: "Lady Gaga",
+    image: "photo/Lady1.jpg",
+  },
+  {
+    titre: "Jennifer",
+    image: "photo/Jen2.jpg",
+  },
+  {
     titre: "Tom",
     image: "photo/Tom2.jpg",
+  },
+  {
+    titre: "Lady Gaga",
+    image: "photo/Lady3.jpg",
   },
   {
     titre: "Tom",
@@ -20,8 +40,8 @@ const posts = [
     image: "photo/Brad1.jpg",
   },
   {
-    titre: "Brad",
-    image: "photo/Brad2.jpg",
+    titre: "Lady Gaga",
+    image: "photo/Lady2.jpg",
   },
 ];
 
@@ -30,7 +50,7 @@ posts.forEach((item) => {
   //creation d'une div
   const article = `
     <div class = "post">
-      <div class = "post-titre">${item.titre}</div>
+      <p = "post-titre">${item.titre}</p>
       <img src = ${item.image} "post-image">
     </div>
   `;

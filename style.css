@@ -2,6 +2,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 header h1 {
     color: green;
@@ -12,10 +13,16 @@ header img {
 
 .conteneur-photo {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
+.conteneur-photo p {
+    text-align: center;
+    font-size: 1.4rem;
+    color: green;
+    margin : 20px 0 0 0;
+}
 .conteneur-photo img {
     max-width: 250px;
     height: 200px;
