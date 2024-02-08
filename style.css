@@ -17,6 +17,10 @@ header img {
     flex-wrap: wrap;
 }
 
+.post {
+    width : 170px;
+}
+
 .conteneur-photo p {
     text-align: center;
     font-size: 1.4rem;
@@ -24,7 +28,8 @@ header img {
     margin : 20px 0 0 0;
 }
 .conteneur-photo img {
-    max-width: 250px;
+ 
     height: 200px;
     margin: 20px;
+   
 }

@@ -56,3 +56,8 @@ posts.forEach((item) => {
   `;
   postConteneur.innerHTML += article;
 });
+const photo = document.querySelector(".conteneur-photo img");
+
+photo.addEventListener("mouseover", function () {
+  console.log("test réussi!");
+});
