@@ -1,12 +1,23 @@
+.hidden {
+    display: none;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
 header {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
 }
+
 header h1 {
     color: green;
 }
+
 header img {
     max-width: 100px;
 }
@@ -18,18 +29,19 @@ header img {
 }
 
 .post {
-    width : 170px;
+    width: 170px;
 }
 
 .conteneur-photo p {
     text-align: center;
     font-size: 1.4rem;
     color: green;
-    margin : 20px 0 0 0;
+    margin: 20px 0 0 0;
 }
+
 .conteneur-photo img {
- 
+
     height: 200px;
     margin: 20px;
-   
+
 }
