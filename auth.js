@@ -1,10 +1,15 @@
 const authentification = document.querySelector(".wrapper");
+const divPhoto = document.querySelector(".conteneur-photo")
 
-const user = document.querySelector("#user");
+const user = document.getElementById("user");
+let userMail = user.value;
+console.log(userMail)
 
-const pass = document.querySelector("#pass");
+const pass = document.getElementById("pass");
+let userPass = pass.value;
+console.log(userPass)
 
-const btnValid =document.querySelector(".input-submit");
+const btnValid = document.querySelector(".input-submit");
 
 
 const users = [
@@ -27,8 +32,13 @@ const users = [
 ]
 
 btnValid.addEventListener('click', function(){
+    console.log(userMail)
+    console.log(userPass)
+
    // if user == users.mail && pass == users.password
-   console.log("cliqué!")
-    authentification.style.display = "none"
+  // console.log("cliqué!")
+  authentification.style.display = "none";
+  divPhoto.style.visibility = "visible";
+
     
 })

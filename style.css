@@ -25,6 +25,7 @@ header h1 {
     flex-wrap: wrap;
     padding: 0 100px;
     box-sizing: border-box;
+    visibility: hidden;
 }
 
 .post {
