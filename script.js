@@ -51,13 +51,8 @@ posts.forEach((item) => {
   const article = `
     <div class = "post">
       <p = "post-titre">${item.titre}</p>
-      <img src = ${item.image} "post-image">
+      <img src = ${item.image}>
     </div>
   `;
   postConteneur.innerHTML += article;
-});
-const photo = document.querySelector(".conteneur-photo img");
-
-photo.addEventListener("mouseover", function () {
-  
 });

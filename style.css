@@ -21,12 +21,15 @@ header h1 {
 
 .conteneur-photo {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0 100px;
+    box-sizing: border-box;
 }
 
 .post {
-    width: 170px;
+    width: 15%;
+    margin: 0 15px;
 }
 
 .conteneur-photo p {
@@ -37,8 +40,19 @@ header h1 {
 }
 
 .conteneur-photo img {
-    height: 200px;
-    margin: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    padding: 5px;
+    transition: transfom .4s;
+}
+
+.conteneur-photo img:hover {
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    transform: scale(2);
+
 }
 
 :root {
@@ -56,6 +70,8 @@ header h1 {
     align-items: center;
     min-height: 100vh;
     background-color: rgb(136, 131, 131);
+    opacity: 1;
+    transition: 0.5s;
 }
 
 .login_box {
@@ -140,15 +156,14 @@ header h1 {
     position: absolute;
     top: 15px;
     left: 20px;
-    transition: 0.2s;
+    transition: .5s;
+
 }
 
 .input-field:focus~.label,
 .input-field:valid .label {
     /* Added missing closing brace here */
-    position: absolute;
     top: -10px;
-    left: 20px;
     font-size: 14px;
     background-color: var(--primary-color);
     border-radius: 30px;
