@@ -11,11 +11,11 @@
 
 <body>
     <header>
-        <img src="photo/cropped-AFTC_Logo-190x189.jpg" />
+        <img id='logo' src="photo/cropped-AFTC_Logo-190x189.jpg" />
         <h1>Bienvenu sur le Blog des Tamaris</h1>
     </header>
     <div>
-        <!-- partial:index.partial.html -->
+        <!-- Authentification -->
         <div class="wrapper">
             <div class="login_box">
                 <div class="login-header">
@@ -31,30 +31,19 @@
                     <label for="pass" class="label">Password</label>
                     <i class="bx bx-lock-alt icon"></i>
                 </div>
-                <div class="remember-forgot">
-                    <div class="remember-me">
-                        <input type="checkbox" id="remember">
-                        <label for="remember">Remember me</label>
-                    </div>
-                    <div class="forgot">
-                        <a href="#">Forgot password?</a>
-                    </div>
-                </div>
                 <div class="input_box">
                     <input type="submit" class="input-submit" value="Login">
                 </div>
-                <div class="register">
-                    <span>Don't have an account? <a href="#">Register</a></span>
-                </div>
             </div>
         </div>
-        <!-- partial -->
+        <!--Authentification -->
 
         <div class="conteneur-photo"></div>
     </div>
 
     <footer></footer>
     <script src="script.js"></script>
+    <script src="auth.js"></script>
 
 </body>
 

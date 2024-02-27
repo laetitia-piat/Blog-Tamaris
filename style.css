@@ -1,10 +1,7 @@
-.hidden {
-    display: none;
-}
-
-label {
-    margin-bottom: 10px;
-    display: block;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header {
@@ -18,7 +15,7 @@ header h1 {
     color: green;
 }
 
-header img {
+#logo {
     max-width: 100px;
 }
 
@@ -40,17 +37,8 @@ header img {
 }
 
 .conteneur-photo img {
-
     height: 200px;
     margin: 20px;
-
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -59,30 +47,15 @@ header img {
     --black-color: #000000;
 }
 
-body {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-a {
-    text-decoration: none;
-    color: var(--second-color);
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 .wrapper {
     width: 100%;
+    height: 100%;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgb(136, 131, 131);
 }
 
 .login_box {
@@ -192,12 +165,6 @@ a:hover {
     font-size: 20px;
 }
 
-.remember-forgot {
-    display: flex;
-    justify-content: space-between;
-    font-size: 15px;
-}
-
 .input-submit {
     width: 100%;
     height: 50px;
@@ -214,13 +181,6 @@ a:hover {
     background: var(--second-color);
 }
 
-.register {
-    text-align: center;
-}
-
-.register a {
-    font-weight: 500;
-}
 
 @media only screen and (max-width: 564px) {
     .wrapper {
