@@ -8,7 +8,8 @@
     <title>Blog Tamaris</title>
     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap'>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 
 <body>
@@ -16,36 +17,24 @@
         <img id='logo' src="photo/cropped-AFTC_Logo-190x189.jpg" />
         <h1>Bienvenu sur le Blog des Tamaris</h1>
     </header>
+    <!-- Authentification -->
     <div>
-        <!-- Authentification -->
-        <div class="wrapper">
-            <div class="login_box">
-                <div class="login-header">
-                    <span>Login</span>
-                </div>
-                <div class="input_box">
-                    <input type="text" id="user" class="input-field" required>
-                    <label for="user" class="label">Username</label>
-                    <i class="bx bx-user icon"></i>
-                </div>
-                <div class="input_box">
-                    <input type="password" id="pass" class="input-field" required>
-                    <label for="pass" class="label">Password</label>
-                    <i class="bx bx-lock-alt icon"></i>
-                </div>
-                <div class="input_box">
-                    <input type="submit" class="input-submit" value="Login">
-                </div>
-            </div>
-        </div>
-        <!--Authentification -->
+        <button id="btn-login" disabled="true" onclick="login()">Log in</button>
+        <button id="btn-logout" disabled="true" onclick="logout()">Log out</button>
+    </div>
+    <!-- Authentification -->
+
+    <div class="hidden" id="gated-content">
 
         <div class="conteneur-photo"></div>
+
     </div>
 
     <footer></footer>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
+    <script src="js/app.js"></script>
     <script src="script.js"></script>
-    <script src="auth.js"></script>
+    <script src="server.js"></script>
 
 </body>
 
