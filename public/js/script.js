@@ -5,7 +5,7 @@ let postConteneur = document.querySelector(".conteneur-photo");
 const posts = [
   {
     titre: "Tom",
-    image: "photo/Tom1.jpg",
+    image: "photo/Tom1.jpg"
   },
   {
     titre: "Jennifer",
