@@ -6,6 +6,7 @@
   "name": "blog-tamaris",
   "version": "1.0.0",
   "main": "index.html",
+  "homepage": "https://laetitia-piat.github.io/Blog-Tamaris/",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
