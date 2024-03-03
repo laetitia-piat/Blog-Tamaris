@@ -16,7 +16,7 @@ const logout = () => {
   });
 };
 
-const fetchAuthConfig = () => fetch("/auth_config.json");
+const fetchAuthConfig = () => fetch("auth_config.json");
 
 const configureClient = async () => {
     const response = await fetchAuthConfig();
@@ -50,7 +50,7 @@ const configureClient = async () => {
       updateUI();
   
       // Use replaceState to redirect the user away and remove the querystring parameters
-      window.history.replaceState({}, document.title, "/");
+      window.history.replaceState({}, document.title, "index.html");
     }
   };
 
