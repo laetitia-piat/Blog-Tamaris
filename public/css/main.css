@@ -16,4 +16,7 @@ label {
     color: blueviolet;
 }
 
-#btn-logout {}
+#btn-logout {
+    width: 70px;
+    border-radius: 40%;
+}
