@@ -9,7 +9,12 @@ label {
 
 #authentification {
     display: flex;
+    justify-content: center;
 
+}
+
+button {
+    margin: 10px;
 }
 
 #btn-login {
