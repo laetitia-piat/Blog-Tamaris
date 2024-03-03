@@ -15,7 +15,7 @@ app.get("/*", (_, res) => {
   res.sendFile(join(__dirname, "index.html"));
 });
 
-module.exports = app;
+//module.exports = app;
 
 // Listen on port 5500
 app.listen(5500, () => console.log("Application running on port 5500"));
