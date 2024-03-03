@@ -7,6 +7,11 @@ label {
     display: block;
 }
 
+#authentification {
+    display: flex;
+
+}
+
 #btn-login {
     color: blueviolet;
 }
