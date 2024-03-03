@@ -6,3 +6,9 @@ label {
     margin-bottom: 10px;
     display: block;
 }
+
+#btn-login {
+    color: blueviolet;
+}
+
+#btn-logout {}
