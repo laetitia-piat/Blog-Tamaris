@@ -8,8 +8,8 @@ const login = async () => {
   });
 };
 
-const logout = () => {
-  auth0Client.logout({
+const logout = async () => {
+  await auth0Client.logout({
     logoutParams: {
       returnTo: window.location.origin
     }
