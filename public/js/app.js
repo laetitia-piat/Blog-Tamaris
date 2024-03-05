@@ -11,7 +11,7 @@ const login = async () => {
 const logout = async () => {
   await auth0Client.logout({
     logoutParams: {
-      returnTo: "https://laetitia-piat.github.io/Blog-Tamaris/"
+      returnTo: window.location.origin
     }
   });
 };
