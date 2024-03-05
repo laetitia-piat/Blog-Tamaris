@@ -3,7 +3,7 @@ let auth0Client = null;
 const login = async () => {
   await auth0Client.loginWithRedirect({
     authorizationParams: {
-      redirect_uri: window.location.origin
+      redirect_uri: "https://laetitia-piat.github.io/Blog-Tamaris/"
     }
   });
 };
@@ -11,7 +11,7 @@ const login = async () => {
 const logout = async () => {
   await auth0Client.logout({
     logoutParams: {
-      returnTo: window.location.origin
+      returnTo: "https://laetitia-piat.github.io/Blog-Tamaris/"
     }
   });
 };
