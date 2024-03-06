@@ -3,7 +3,7 @@ let auth0Client = null;
 const login = async () => {
   await auth0Client.loginWithRedirect({
     authorizationParams: {
-      redirect_uri: window.location.href ="https://laetitia-piat.github.io/Blog-Tamaris"
+      redirect_uri: window.location.origin
     }
   });
 };
