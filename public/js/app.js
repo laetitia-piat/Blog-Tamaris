@@ -1,33 +1,5 @@
 let auth0Client = null;
 
-const login = async (targetUrl) => {
-  try {
-    console.log("Logging in", targetUrl);
-
-    const options = {
-      authorizationParams: {
-        redirect_uri: window.location.origin
-      }
-    };
-
-    if (targetUrl) {
-      options.appState = { targetUrl };
-    }
-
-    await auth0Client.loginWithRedirect(options);
-  } catch (err) {
-    console.log("Log in failed", err);
-  }
-};
-
-const logout = async () => {
-  await auth0Client.logout({
-    logoutParams: {
-      returnTo: window.location.origin
-    }
-  });
-};
-
 const fetchAuthConfig = () => fetch("auth_config.json");
 
 const configureClient = async () => {
@@ -84,4 +56,32 @@ const configureClient = async () => {
     } else {
       document.getElementById("gated-content").classList.add("hidden");
     }
+  };
+
+  const login = async (targetUrl) => {
+    try {
+      console.log("Logging in", targetUrl);
+  
+      const options = {
+        authorizationParams: {
+          redirect_uri: window.location.origin
+        }
+      };
+  
+      if (targetUrl) {
+        options.appState = { targetUrl };
+      }
+  
+      await auth0Client.loginWithRedirect(options);
+    } catch (err) {
+      console.log("Log in failed", err);
+    }
+  };
+  
+  const logout = async () => {
+    await auth0Client.logout({
+      logoutParams: {
+        returnTo: window.location.origin
+      }
+    });
   };
