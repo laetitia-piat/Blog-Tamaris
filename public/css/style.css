@@ -53,3 +53,32 @@ header h1 {
     -webkit-transform: scale(2);
     transform: scale(2);
 }
+
+.conteneur-download {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+#download-form {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+}
+
+#valid {
+    width: 30%;
+}
+
+.name-select {
+    width: 50%;
+    margin: auto;
+}

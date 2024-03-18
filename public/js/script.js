@@ -1,6 +1,10 @@
 //Je selectionne et je stock la div conteneur-photo
 let postConteneur = document.querySelector(".conteneur-photo");
 
+const btnValid = document.querySelector(".button")
+console.log(btnValid)
+
+
 //Je créé un tableau avec mes objets
 const posts = [
   {

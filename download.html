@@ -10,7 +10,6 @@
     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
     <link rel="stylesheet" type="text/css" href="public/css/style.css" />
     <link rel="stylesheet" type="text/css" href="public/css/main.css" />
-
 </head>
 
 <body>
@@ -18,23 +17,21 @@
         <a href="index.html"><img id='logo' src="public/photo/cropped-AFTC_Logo-190x189.jpg" /></a>
         <h1>Bienvenu sur le Blog des Tamaris</h1>
     </header>
-    <!-- Authentification -->
-    <div id="authentification">
-        <button id="btn-login" class="button" disabled="true" onclick="login()">Connexion</button>
-        <button id="btn-logout" class="button" disabled="true" onclick="logout()">Déconnexion</button>
-    </div>
-    <!-- Authentification -->
 
-    <div class="hidden" id="gated-content">
-
-        <div class="conteneur-photo"></div>
-        <div class="conteneur-download">
-            <a href="download.html"><button id="download" class="button">Télécharger</button></a>
+    <div id="download-form">
+        <select name="nom" class="name-select">
+            <option value="Tom">Tom</option>
+            <option value="Jennifer">Jennifer</option>
+            <option value="Brad">Brad</option>
+            <option value="Lady Gaga">Lady Gaga</option>
+        </select>
+        <div class="input">
+            <input type="file" name="file" class="download-link">
         </div>
-
+        <div class="input">
+            <input type="submit" id="valid" class="button">
+        </div>
     </div>
-
-    <footer></footer>
     <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
     <script src="public/js/app.js"></script>
     <script src="public/js/script.js"></script>
