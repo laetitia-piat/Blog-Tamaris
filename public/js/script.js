@@ -1,18 +1,6 @@
 //Je selectionne et je stock la div conteneur-photo
 let postConteneur = document.querySelector(".conteneur-photo");
 
-// let btnValid = document.querySelector("#valid")
-
-// btnValid.addEventListener('click', function(){
-
-// let nameChoice = document.getElementById("name-select");
-// let textSelectionne = nameChoice.value;
-// let link = document.getElementsByClassName("download-link")
-// console.log(link)
-// console.log("c'est cliqué!")
-// console.log(textSelectionne);
-// })
-
 //Je créé un tableau avec mes objets
 const posts = [
   {
