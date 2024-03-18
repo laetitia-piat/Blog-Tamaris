@@ -76,9 +76,22 @@ header h1 {
 
 #valid {
     width: 30%;
+    margin-top: 50px;
 }
 
-.name-select {
-    width: 50%;
-    margin: auto;
+#name-select {
+    width: 30%;
+    height: 30px;
+    margin: 20px auto;
+    font-size: 1.1em;
+}
+
+#container-link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.download-link {
+    font-size: 1.1em;
 }
