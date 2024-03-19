@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <a href="index.html"><img id='logo' src="public/photo/cropped-AFTC_Logo-190x189.jpg" /></a>
+        <img id='logo' src="public/photo/cropped-AFTC_Logo-190x189.jpg" />
         <h1>Bienvenu sur le Blog des Tamaris</h1>
     </header>
     <!-- Authentification -->
@@ -26,12 +26,21 @@
     <!-- Authentification -->
 
     <div class="hidden" id="gated-content">
-
         <div class="conteneur-photo"></div>
-        <div class="conteneur-download">
-            <a href="download.html"><button id="download" class="button">Télécharger</button></a>
+        <div id="download-form">
+            <select name="nom" id="name-select">
+                <option value="Tom">Tom</option>
+                <option value="Jennifer">Jennifer</option>
+                <option value="Brad">Brad</option>
+                <option value="Lady Gaga">Lady Gaga</option>
+            </select>
+            <div id="container-link" class="input">
+                <input type="file" name="file" class="download-link" accept="image/png, image/jpeg">
+            </div>
+            <div class="conteneur-download">
+                <button id="download" class="button">Télécharger</button>
+            </div>
         </div>
-
     </div>
 
     <footer></footer>
