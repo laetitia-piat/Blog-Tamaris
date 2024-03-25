@@ -7,43 +7,43 @@ const btnValid = document.querySelector("#download");
 const posts = [
   {
     'titre': "Tom",
-    'image': "public/photo/Tom1.jpg"
+    "image": "public/photo/Tom1.jpg"
   },
   {
     'titre': "Jennifer",
-    'image': "public/photo/Jen1.jpg",
+    "image": "public/photo/Jen1.jpg",
   },
   {
     'titre': "Brad",
-    'image': "public/photo/Brad2.jpg",
+    "image": "public/photo/Brad2.jpg",
   },
   {
     'titre': "Lady Gaga",
-    'image': "public/photo/Lady1.jpg",
+    "image": "public/photo/Lady1.jpg",
   },
   {
     'titre': "Jennifer",
-    'image': "public/photo/Jen2.jpg",
+    "image": "public/photo/Jen2.jpg",
   },
   {
     'titre': "Tom",
-    'image': "public/photo/Tom2.jpg",
+    "image": "public/photo/Tom2.jpg",
   },
   {
     'titre': "Lady Gaga",
-    'image': "public/photo/Lady3.jpg",
+    "image": "public/photo/Lady3.jpg",
   },
   {
     'titre': "Tom",
-    'image': "public/photo/Tom3.jpg",
+    "image": "public/photo/Tom3.jpg",
   },
   {
     'titre': "Brad",
-    'image': "public/photo/Brad1.jpg",
+    "image": "public/photo/Brad1.jpg",
   },
   {
     'titre': "Lady Gaga",
-    'image': "public/photo/Lady2.jpg",
+    "image": "public/photo/Lady2.jpg",
   },
 ];
 
@@ -68,7 +68,7 @@ btnValid.addEventListener('click', function(){
  let textSelectionne = nameChoice.value
  let fichiers = document.getElementById("input-file").files[0];
  
- posts.push({'titre' : textSelectionne, 'image' : "public/photo/" + fichiers.name });
+ posts.push({'titre' : textSelectionne, "image" : "public/photo/" + fichiers.name });
 
 
  console.log("c'est cliqué!")

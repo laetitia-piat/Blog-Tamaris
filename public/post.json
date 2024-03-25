@@ -1,0 +1,42 @@
+[
+    {
+        "titre": "Tom",
+        "image": "public/photo/Tom1.jpg"
+    },
+    {
+        "titre": "Jennifer",
+        "image": "public/photo/Jen1.jpg"
+    },
+    {
+        "titre": "Brad",
+        "image": "public/photo/Brad2.jpg"
+    },
+    {
+        "titre": "Lady Gaga",
+        "image": "public/photo/Lady1.jpg"
+    },
+    {
+        "titre": "Jennifer",
+        "image": "public/photo/Jen2.jpg"
+    },
+    {
+        "titre": "Tom",
+        "image": "public/photo/Tom2.jpg"
+    },
+    {
+        "titre": "Lady Gaga",
+        "image": "public/photo/Lady3.jpg"
+    },
+    {
+        "titre": "Tom",
+        "image": "public/photo/Tom3.jpg"
+    },
+    {
+        "titre": "Brad",
+        "image": "public/photo/Brad1.jpg"
+    },
+    {
+        "titre": "Lady Gaga",
+        "image": "public/photo/Lady2.jpg"
+    },
+];
