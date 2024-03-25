@@ -26,3 +26,7 @@ label {
     height: 45px;
     font-size: 1.3em;
 }
+
+p {
+    color: rgb(119, 11, 49)
+}

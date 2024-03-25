@@ -1,6 +1,6 @@
 //Je selectionne et je stock la div conteneur-photo
 let postConteneur = document.querySelector(".conteneur-photo");
-
+let article ;
 const btnValid = document.querySelector("#download");
 
 //Je créé un tableau avec mes objets
@@ -50,7 +50,7 @@ const posts = [
 //Boucler pour faire apparaitre chaque objet du tableau sur notre blog
 posts.forEach((item) => {
   //creation d'une div
-  const article = `
+   article = `
     <div class = "post">
       <p = "post-titre">${item.titre}</p>
       <img src = ${item.image}>
@@ -59,12 +59,20 @@ posts.forEach((item) => {
   postConteneur.innerHTML += article;
 });
 
+//const fichiers = document.getElementById("download").files[0];
+
 
 btnValid.addEventListener('click', function(){
 
  let nameChoice = document.getElementById("name-select")
  let textSelectionne = nameChoice.value
+ let fichiers = document.getElementById("input-file").files[0];
+ 
+ 
+
 
  console.log("c'est cliqué!")
  console.log(textSelectionne);
+ console.log(fichiers);
+ 
  });
